@@ -3,14 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Site</title>
+  <title>Open Road Impact — Chatbot Demo</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #1a1a1a;
+      background: #fafafa;
+    }
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #555;
+      font-size: 1.05rem;
+      margin-top: 0;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-top: 32px;
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      margin-top: 0;
+    }
+    .card p {
+      line-height: 1.6;
+      color: #333;
+    }
+    .arrow {
+      display: inline-block;
+      font-size: 1.5rem;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 36px;
+      padding: 20px;
+      background: #e3f2fd;
+      border-radius: 10px;
+    }
+    .cta p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #1565c0;
+      font-weight: 500;
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 0.8rem;
+      color: #999;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>My Test Site</h1>
-  <p>This is a dummy site for testing a chat agent.</p>
+
+  <div class="badge">Internal Demo — Not Public</div>
+  <h1>Open Road Impact — Loan Eligibility Chatbot</h1>
+  <p class="subtitle">A prototype AI assistant that helps prospective borrowers assess their fit for an Open Road bridge loan.</p>
+
+  <div class="card">
+    <h2>What is this?</h2>
+    <p>This page is a <strong>test environment</strong> for a chatbot we're developing as a potential client project for <strong>Open Road Impact</strong>. The chatbot guides prospective borrowers through Open Road's eligibility criteria — impact focus, short-term financing need, accountability, and loan parameters — in a conversational format.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="arrow">💬</span> Try the chatbot</h2>
+    <p>Click the <strong>chat icon in the bottom-right corner</strong> of this page to open the assistant. Try it out as if you were a prospective borrower — describe a real or fictional organization and financing need, and see how the bot responds.</p>
+    <p>A few things to try:</p>
+    <p>
+      • Describe a solar energy company in East Africa that needs bridge financing while waiting for a grant disbursement.<br>
+      • Describe a U.S. fitness app looking for growth capital.<br>
+      • Ask about loan sizes, timelines, or the application process.<br>
+      • Try going off-topic and see how the bot redirects.
+    </p>
+  </div>
+
+  <div class="cta">
+    <p>👉 Open the chat widget in the bottom-right corner to get started.</p>
+  </div>
+
+  <footer>
+    IDinsight internal demo · Not affiliated with or endorsed by Open Road Impact
+  </footer>
+
 
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="EaSs-kYJcMmglVDcn35Ta";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
